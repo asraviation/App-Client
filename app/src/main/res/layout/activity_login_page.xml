@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:theme="@style/Base.Theme.ASRAviation"
+    tools:context=".LoginPage">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginimg" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview1"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_150sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/asrlogo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back!"
+                app:layout_constraintEnd_toEndOf="@+id/asrlogo"
+                android:textColor="@color/logintext"
+                android:fontFamily="@font/jostregular"
+                android:textSize="@dimen/_25ssp"
+                app:layout_constraintStart_toStartOf="@+id/asrlogo"
+                app:layout_constraintTop_toBottomOf="@+id/asrlogo" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1">
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Username"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtusername"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/loginicon1"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Username"
+                    android:autofillHints="username"
+                    android:inputType="text"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+                <TextView
+                    android:id="@+id/txtcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Password"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/passwordicon"
+                    android:drawableEnd="@drawable/paswordsee"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Password"
+
+                    android:autofillHints="password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnlogin"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll2"
+                android:background="@drawable/buttongrad"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ralewaymedium"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btngooglelogin"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/cardview1"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/cardview1"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        android:background="@drawable/btnborder"
+        android:drawableStart="@drawable/googleicon"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingEnd="@dimen/_17sdp"
+        android:textAllCaps="false"
+        android:text="Sign in with Google"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/ralewaylight" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnoperatorlogin"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/btngooglelogin"
+        app:layout_constraintStart_toStartOf="@+id/btngooglelogin"
+        app:layout_constraintTop_toBottomOf="@+id/btngooglelogin"
+        android:background="@drawable/btnborder"
+        android:backgroundTint="#F6E6D2"
+        android:drawableStart="@drawable/operator"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:text="Operator Login"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/ralewaylight" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/btnoperatorlogin"
+        app:layout_constraintStart_toStartOf="@+id/btnoperatorlogin"
+        app:layout_constraintTop_toBottomOf="@id/btnoperatorlogin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/ralewaylight"
+            android:text="Don’t have one? Create an account? "
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/ralewayregular"
+            android:text="Sign Up"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:layout_editor_absoluteX="98dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

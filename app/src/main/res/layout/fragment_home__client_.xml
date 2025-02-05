@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home_Client_Frag">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="Features Deals"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textSize="@dimen/_21ssp"
+                android:textColor="@color/logintext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/white"
+                android:src="@drawable/profileicon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.018" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience Luxury"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textSize="@dimen/_25ssp"
+                android:textColor="@color/logintext"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ralewaylight"
+                android:textSize="@dimen/_11ssp"
+                android:text="Experience the art of travel with ASR Aviation"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.463"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtsrc"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bottom_nav"
+                        android:elevation="@dimen/_2sdp"
+                        android:iconifiedByDefault="false"
+                        android:drawableLeft="@drawable/search"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:hint="Soruce.."
+                        android:textAlignment="textStart"/>
+
+
+                    <EditText
+                        android:id="@+id/edtdest"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bottom_nav"
+                        android:elevation="@dimen/_2sdp"
+                        android:iconifiedByDefault="false"
+                        android:drawableLeft="@drawable/search"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:hint="Destination.."
+                        android:textAlignment="textStart"/>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/swapsrcdest"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:src="@drawable/swapsrcdest" />
+
+                <ImageButton
+                    android:id="@+id/datepicker"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:src="@drawable/calender" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="#000000"
+                android:backgroundTint="@color/white"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                <!-- Charter Button -->
+                <LinearLayout
+                    android:id="@+id/charterButton"
+                    android:layout_width="79dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:background="@drawable/clientselectbtn"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/plane" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ralewaylight"
+                        android:text="Charter"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Seats Button -->
+                <LinearLayout
+                    android:id="@+id/seatbtn"
+                    android:layout_width="67dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/clientnoselectbtn"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/sofa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ralewaylight"
+                        android:text="Seats"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Taxi Button -->
+                <LinearLayout
+                    android:id="@+id/taxibtn"
+                    android:layout_width="67dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/clientnoselectbtn"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/taxi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ralewaylight"
+                        android:text="Taxi"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsc"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="@dimen/_200sdp"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="5dp">
+                       <ImageView
+                           android:id="@+id/img3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="260dp"
+                           android:src="@drawable/jetimg"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintHorizontal_bias="0.0"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintVertical_bias="0.042" />
+
+                       <LinearLayout
+                           android:layout_width="37dp"
+                           android:layout_height="21dp"
+                           android:layout_marginTop="16dp"
+                           android:layout_marginEnd="32dp"
+                           android:background="@drawable/cardbg"
+                           android:gravity="center"
+                           android:orientation="horizontal"
+                           app:layout_constraintEnd_toEndOf="@+id/img3"
+                           app:layout_constraintTop_toTopOf="@+id/img3">
+
+                           <TextView
+                               android:layout_width="9.9dp"
+                               android:layout_height="17.2dp"
+                               android:fontFamily="@font/ralewayregular"
+                               android:text="5"
+                               android:textColor="@color/logintext"
+                               android:textSize="12sp"
+                               android:textStyle="bold" />
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/seatingimg" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="26dp"
+                           android:layout_marginStart="16dp"
+                           android:layout_marginBottom="14dp"
+                           android:background="@drawable/cardbg"
+                           android:gravity="center_vertical"
+                           android:orientation="horizontal"
+                           app:layout_constraintBottom_toBottomOf="@+id/img3"
+                           app:layout_constraintStart_toStartOf="@+id/img3">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/locpin"
+                               android:layout_marginStart="@dimen/_5sdp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/ralewaymedium"
+                               android:text="Banglore to Mumbai"
+                               android:textColor="@color/black"
+                               android:textSize="12sp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                               android:layout_marginEnd="@dimen/_4sdp"/>
+                       </LinearLayout>
+
+                       <com.google.android.material.card.MaterialCardView
+                           android:layout_width="245dp"
+                           android:layout_height="40dp"
+                           android:background="@drawable/clientcard"
+                           android:layout_marginTop="5dp"
+                           android:elevation="2dp"
+                           android:backgroundTint="@color/white"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="@id/img3"
+                           app:layout_constraintTop_toBottomOf="@id/img3">
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:orientation="horizontal"
+                               android:gravity="center_vertical">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Legacy 600"
+                                   android:textSize="16sp"
+                                   android:textStyle="bold"
+                                   android:fontFamily="@font/ralewayregular"
+                                   android:layout_marginStart="10dp"
+                                   android:textColor="#FFB300"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:background="@drawable/pricebg"
+                                   android:text="Rs. 1,10,000"
+                                   android:padding="@dimen/_2sdp"
+                                   android:layout_marginStart="@dimen/_60sdp"
+                                   android:fontFamily="@font/ralewayregular"
+                                   android:textColor="@android:color/white"
+                                   android:textSize="9sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </com.google.android.material.card.MaterialCardView>
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="260dp"
+                            android:src="@drawable/jetimg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.042" />
+
+                        <LinearLayout
+                            android:layout_width="37dp"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/cardbg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="@+id/img4"
+                            app:layout_constraintTop_toTopOf="@+id/img4">
+
+                            <TextView
+                                android:layout_width="9.9dp"
+                                android:layout_height="17.2dp"
+                                android:fontFamily="@font/ralewayregular"
+                                android:text="5"
+                                android:textColor="@color/logintext"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/seatingimg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="14dp"
+                            android:background="@drawable/cardbg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="@+id/img4"
+                            app:layout_constraintStart_toStartOf="@+id/img4">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/locpin"
+                                android:layout_marginStart="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaymedium"
+                                android:text="Banglore to Mumbai"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"/>
+                        </LinearLayout>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="245dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/clientcard"
+                            android:layout_marginTop="5dp"
+                            android:elevation="2dp"
+                            android:backgroundTint="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/img4"
+                            app:layout_constraintTop_toBottomOf="@+id/img4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tvFlightName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Legacy 600"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="#FFB300"/>
+
+                                <TextView
+                                    android:id="@+id/tvPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/pricebg"
+                                    android:text="Rs. 1,10,000"
+                                    android:padding="@dimen/_2sdp"
+                                    android:layout_marginStart="@dimen/_60sdp"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="260dp"
+                            android:src="@drawable/jetimg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.042" />
+
+                        <LinearLayout
+                            android:layout_width="37dp"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/cardbg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="@+id/img5"
+                            app:layout_constraintTop_toTopOf="@+id/img5">
+
+                            <TextView
+                                android:layout_width="9.9dp"
+                                android:layout_height="17.2dp"
+                                android:fontFamily="@font/ralewayregular"
+                                android:text="5"
+                                android:textColor="@color/logintext"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/seatingimg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="14dp"
+                            android:background="@drawable/clientcard"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="@+id/img5"
+                            app:layout_constraintStart_toStartOf="@+id/img5">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/locpin"
+                                android:layout_marginStart="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaymedium"
+                                android:text="Banglore to Mumbai"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"/>
+                        </LinearLayout>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="245dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/clientcard"
+                            android:layout_marginTop="5dp"
+                            android:elevation="2dp"
+                            android:backgroundTint="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/img5"
+                            app:layout_constraintTop_toBottomOf="@+id/img5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Legacy 600"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="#FFB300"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/pricebg"
+                                    android:text="Rs. 1,10,000"
+                                    android:padding="@dimen/_2sdp"
+                                    android:layout_marginStart="@dimen/_60sdp"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ralewaysemibold"
+                android:text="Exclusive Services"
+                android:textColor="@color/logintext"
+                android:textSize="@dimen/_19ssp"
+                android:layout_marginStart="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="@id/hsc"
+                app:layout_constraintTop_toBottomOf="@id/hsc" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="240dp"
+                            android:src="@drawable/ex1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sky Parties"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/ralewayregular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp">
+
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="240dp"
+                            android:src="@drawable/ex2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Air Ambulance"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/ralewayregular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp">
+
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="240dp"
+                            android:src="@drawable/ex3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Religious Tours"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/ralewayregular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp">
+
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="240dp"
+                            android:src="@drawable/ex2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Air Ambulance"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/ralewayregular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp">
+
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="240dp"
+                            android:src="@drawable/ex4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Air Survey"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/ralewayregular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

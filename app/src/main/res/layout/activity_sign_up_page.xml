@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    tools:context=".LoginPage">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginimg" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview1"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/asrlogo"
+                android:layout_width="96dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/jostregular"
+                android:text="Welcome"
+                android:textColor="@color/logintext"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/asrlogo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt2">
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Email"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:autofillHints="username"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/emailicon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+                <TextView
+                    android:id="@+id/txtcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Contact"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtcontact"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/emailicon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Contact Number"
+                    android:autofillHints="password"
+                    android:inputType="phone"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll2">
+
+                <TextView
+                    android:id="@+id/txtuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Username"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtuser"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/loginicon1"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Username"
+                    android:autofillHints="password"
+                    android:inputType="text"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll3">
+
+                <TextView
+                    android:id="@+id/txtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Password"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtpass"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/passwordicon"
+                    android:drawableEnd="@drawable/paswordsee"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Password"
+                    android:autofillHints="password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll4">
+
+
+                <TextView
+                    android:id="@+id/txtcpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/jostlight"
+                    android:text="Confirm Password"
+                    android:textColor="@color/logintext"
+                    android:textSize="@dimen/_10ssp" />
+
+                <EditText
+                    android:id="@+id/edtcpass"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/edtbg"
+                    android:drawableStart="@drawable/passwordicon"
+                    android:drawableEnd="@drawable/paswordsee"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/jostlight"
+                    android:hint="Enter Password Again"
+                    android:autofillHints="password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsignup"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll5"
+                android:background="@drawable/buttongrad"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ralewaymedium"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jostregular"
+                android:text="Onboard!"
+                android:textColor="@color/logintext"
+                android:textSize="@dimen/_23ssp"
+                app:layout_constraintEnd_toEndOf="@+id/txt1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt1"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btngooglelogin"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/cardview1"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/cardview1"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        android:background="@drawable/btnborder"
+        android:drawableStart="@drawable/googleicon"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingEnd="@dimen/_17sdp"
+        android:textAllCaps="false"
+        android:text="Sign in with Google"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/ralewaylight" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btngooglelogin"
+        app:layout_constraintEnd_toEndOf="@+id/btngooglelogin"
+        app:layout_constraintStart_toStartOf="@+id/btngooglelogin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Already have an Account?  "
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            android:fontFamily="@font/ralewaylight"
+            android:textSize="@dimen/_11ssp"/>
+
+        <TextView
+            android:id="@+id/txtsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Sign In"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:layout_editor_absoluteX="98dp"
+            android:fontFamily="@font/ralewayregular"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

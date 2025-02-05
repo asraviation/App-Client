@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btnstart">#DBC853</color>
+    <color name="btnend">#E6B505</color>
+    <color name="logintext">#E6B505</color>
+    <color name="lightgolden">#D9C33D</color>
+    <color name="bottomchecked">#757573</color>
+    <color name="green">#449F3A</color>
+    <color name="orange">#FF5B1F</color>
+    <color name="yellow">#FFCE1F</color>
+    <color name="red">#FF0000</color>
+    <color name="cardbg">#FEFCF9</color>
+
+
+
+</resources>
