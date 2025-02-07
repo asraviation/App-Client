@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".operator.OperatorAddFleet">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_23sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bookings Title -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ralewaysemibold"
+        android:text="Add Fleet"
+        android:textColor="@color/logintext"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ralewaylight"
+        android:text="Enter the details of your Fleet"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <!-- Profile Icon Button -->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Profile Icon"
+        android:src="@drawable/profileicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fleet Name"
+            android:fontFamily="@font/ralewayregular"
+            android:textSize="@dimen/_15ssp"/>
+
+        <EditText
+            android:id="@+id/edtfleetname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/addfleetop"
+            android:hint="Enter your Fleet Name"
+            android:fontFamily="@font/ralewaylight"
+            android:textColorHint="@color/lightgolden"
+            android:drawableStart="@drawable/fleetname"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hanger Base Location"
+            android:fontFamily="@font/ralewayregular"
+            android:textSize="@dimen/_15ssp"/>
+
+        <EditText
+            android:id="@+id/edthanger"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/addfleetop"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Enter the base location of the fleet"
+            android:fontFamily="@font/ralewaylight"
+            android:textColorHint="@color/lightgolden"
+            android:drawableStart="@drawable/takeoff"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:fontFamily="@font/ralewayregular"
+            android:textSize="@dimen/_15ssp"/>
+
+        <EditText
+            android:id="@+id/edtlocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/addfleetop"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Enter current fleet location"
+            android:fontFamily="@font/ralewaylight"
+            android:textColorHint="@color/lightgolden"
+            android:drawableStart="@drawable/locclient"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price per hour"
+            android:fontFamily="@font/ralewayregular"
+            android:textSize="@dimen/_15ssp"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/materialSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layoutDirection="ltr"
+            app:valueFrom="0"
+            app:valueTo="100"
+            app:stepSize="1"
+            app:trackHeight="@dimen/_5sdp"
+            android:theme="@style/Widget.MaterialComponents.Slider"
+            app:trackColor="@color/lightgolden"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

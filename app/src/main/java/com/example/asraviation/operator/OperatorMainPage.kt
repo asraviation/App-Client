@@ -34,6 +34,7 @@ class OperatorMainPage : AppCompatActivity() {
               R.id.opanalyticsbottom -> replaceFragment(FragOperatorAnallytics())
               R.id.opbookingbottom -> replaceFragment(FragOperatorBooking())
                 R.id.opprofilebottom -> replaceFragment(FragOperatorProfile())
+                R.id.opfleetbottom -> replaceFragment(FragOperatorFleet())
             }
             true
         }
