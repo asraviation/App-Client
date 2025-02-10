@@ -60,7 +60,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_14sdp"
         android:orientation="vertical"
@@ -72,12 +72,12 @@
             android:layout_height="wrap_content"
             android:text="Fleet Name"
             android:fontFamily="@font/ralewayregular"
-            android:textSize="@dimen/_15ssp"/>
+            android:textSize="@dimen/_13ssp"/>
 
         <EditText
             android:id="@+id/edtfleetname"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_3sdp"
             android:layout_marginBottom="@dimen/_5sdp"
             android:background="@drawable/addfleetop"
@@ -93,12 +93,12 @@
             android:layout_height="wrap_content"
             android:text="Hanger Base Location"
             android:fontFamily="@font/ralewayregular"
-            android:textSize="@dimen/_15ssp"/>
+            android:textSize="@dimen/_13ssp"/>
 
         <EditText
             android:id="@+id/edthanger"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_3sdp"
             android:background="@drawable/addfleetop"
             android:layout_marginBottom="@dimen/_5sdp"
@@ -114,12 +114,12 @@
             android:layout_height="wrap_content"
             android:text="Current Location"
             android:fontFamily="@font/ralewayregular"
-            android:textSize="@dimen/_15ssp"/>
+            android:textSize="@dimen/_13ssp"/>
 
         <EditText
             android:id="@+id/edtlocation"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_3sdp"
             android:background="@drawable/addfleetop"
             android:layout_marginBottom="@dimen/_5sdp"
@@ -135,20 +135,110 @@
             android:layout_height="wrap_content"
             android:text="Price per hour"
             android:fontFamily="@font/ralewayregular"
-            android:textSize="@dimen/_15ssp"/>
+            android:textSize="@dimen/_13ssp"/>
 
         <com.google.android.material.slider.Slider
-            android:id="@+id/materialSlider"
+            android:id="@+id/slder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:thumbColor="@color/logintext"
+            app:thumbRadius="8dp"
+            app:trackHeight="4dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:fontFamily="@font/ralewayregular"
+            android:textSize="@dimen/_13ssp"/>
+
+        <EditText
+            android:id="@+id/edtspeed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/addfleetop"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Enter current fleet location"
+            android:fontFamily="@font/ralewaylight"
+            android:textColorHint="@color/lightgolden"
+            android:drawableStart="@drawable/locclient"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo"
+                android:fontFamily="@font/ralewayregular"
+                android:textSize="@dimen/_13ssp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/addimg"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/addfleetop"
+                android:elevation="@dimen/_4sdp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/addimg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fleetsimg"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layoutDirection="ltr"
-            app:valueFrom="0"
-            app:valueTo="100"
-            app:stepSize="1"
-            app:trackHeight="@dimen/_5sdp"
-            android:theme="@style/Widget.MaterialComponents.Slider"
-            app:trackColor="@color/lightgolden"/>
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:fontFamily="@font/ralewayregular"
+                android:textSize="@dimen/_13ssp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView8"
+                app:trackTint="@color/logintext" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/logintext"
+            android:text="SUBMIT"
+            android:fontFamily="@font/ralewaysemibold"
+            android:textColor="@color/white"/>
 
 
 

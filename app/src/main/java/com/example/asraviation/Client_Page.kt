@@ -30,7 +30,7 @@ class Client_Page : AppCompatActivity() {
             when (it.itemId) {
                 R.id.homebottom -> replaceFragment(Home_Client_Frag())
                 R.id.historybottom -> replaceFragment(Booking_Client_Frag())
-//                R.id.historybottom -> replaceFragment(History_Client_Frag())
+                R.id.fleetbottom -> replaceFragment(FleetClientFrag())
             }
             true
         }
