@@ -354,6 +354,7 @@
                                    android:textColor="#FFB300"/>
 
                                <TextView
+                                   android:id="@+id/clicktxt"
                                    android:layout_width="wrap_content"
                                    android:layout_height="wrap_content"
                                    android:background="@drawable/pricebg"

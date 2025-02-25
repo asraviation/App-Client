@@ -1,5 +1,6 @@
 package com.example.asraviation
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,12 +18,17 @@ class Home_Client_Frag : Fragment() {
     ): View? {
         // Initialize binding with inflater
         _binding = FragmentHomeClientBinding.inflate(inflater, container, false)
+
+        binding.clicktxt.setOnClickListener {
+            startActivity(Intent(requireContext(), ClinetBookSumarry::class.java))
+        }
+
         return binding.root
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //main code logic
+
     }
 
     override fun onDestroyView() {
